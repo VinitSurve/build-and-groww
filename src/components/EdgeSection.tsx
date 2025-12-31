@@ -14,6 +14,8 @@ const neonStyle = (i: number) => ({
   filter: 'blur(40px)'
 } as React.CSSProperties);
 
+// EdgeSection Component
+
 export default function EdgeSection() {
     const sectionRef = useRef<HTMLDivElement>(null);
     const landmarksRef = useRef<HTMLDivElement>(null);
