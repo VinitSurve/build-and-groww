@@ -1,7 +1,8 @@
 "use client";
 
+import { m } from "framer-motion";
+import { Mail, MailOpen } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
 
 const mumbaiOrganizers = [
   { name: "Abhishek Sharma", role: "Lead Cloud Engineer", company: "Searce Inc", bio: "Google Developer Expert · Cloud Adviser · Tech Speaker", image: "/abhishek_sharma_RQClIHO.webp", profile: "https://linktr.ee/acloudpotato", github: "https://github.com/acloudpotato", linkedin: "https://www.linkedin.com/in/acloudpotato/" },
@@ -11,10 +12,10 @@ const mumbaiOrganizers = [
 ];
 
 const puneOrganizers = [
-  { name: "Antrixsh Gupta", role: "GDG Organizer", company: "", image: "/antrixsh_gupta_imgupscaler.ai_V1(Fast)_2K.png", profile: "#", github: "#", linkedin: "#" },
-  { name: "Pratik Kale", role: "Co-Organizer", company: "Impulsive Web", image: "/pratik_kale_JE4xYmT_imgupscaler.ai_V1(Fast)_2K.png", profile: "#", github: "#", linkedin: "#" },
-  { name: "Dnyanada Mahajan", role: "Co Organizer", company: "Gen Digital - NortonLifeLock", image: "/dnyanada_mahajan_imgupscaler.ai_V1(Fast)_2K.png", profile: "#", github: "#", linkedin: "#" },
-  { name: "Vatsal Jain", role: "Event Organizer", company: "vConstruct Pvt Ltd", image: "/vatsal_jain_9uuB5SU_imgupscaler.ai_V1(Fast)_2K.png", profile: "#", github: "#", linkedin: "#" }
+  { name: "Antrixsh Gupta", role: "GDG Organizer", company: "", image: "/antrixsh_gupta_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "https://www.linkedin.com/in/antrixshgupta" },
+  { name: "Pratik Kale", role: "Co-Organizer", company: "Impulsive Web", image: "/pratik_kale_JE4xYmT_imgupscaler.ai_V1(Fast)_2K.png", profile: "pratikkale.in", email: "ppvkale@gmail.com", linkedin: "https://www.linkedin.com/in/pratikkalein/" },
+  { name: "Dnyanada Mahajan", role: "Co Organizer", company: "Gen Digital - NortonLifeLock", image: "/dnyanada_mahajan_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "linkedin.com/in/dnyanadam" },
+  { name: "Vatsal Jain", role: "Event Organizer", company: "vConstruct Pvt Ltd", image: "/vatsal_jain_9uuB5SU_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "linkedin.com/in/vatsaljain0205" }
 ];
 
 export default function OrganizersSection() {
@@ -51,29 +52,8 @@ export default function OrganizersSection() {
     return () => observer.disconnect();
   }, [animationComplete]);
 
-  useEffect(() => {
-    if (!animationComplete) return;
-
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReducedMotion) return;
-
-    const cards = Array.from(cardsRef.current?.querySelectorAll('.organizer-card') || []) as HTMLElement[];
-    if (cards.length === 0) return;
-
-    gsap.set(cards, { opacity: 0, y: 50 });
-    gsap.to(cards, {
-      opacity: 1,
-      y: 0,
-      duration: 0.8,
-      ease: 'power4.out',
-      stagger: 0.1,
-      delay: 0.2
-    });
-
-  }, [animationComplete]);
-
   return (
-    <section id="organizers" ref={sectionRef} className="relative py-24 px-4 sm:px-6 lg:px-8">
+    <section id="organizers" ref={sectionRef} className="relative py-24 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-7xl font-extralight text-white tracking-[0.2em] uppercase mb-4">
@@ -108,7 +88,7 @@ export default function OrganizersSection() {
                   />
 
                   {/* subtle persistent dim overlay to improve contrast */}
-                  <div className="absolute inset-0 z-20 bg-black/30 rounded-xl pointer-events-none" />
+                  <div className="absolute inset-0 border border-white/5 opacity-40 rounded-xl z-20 pointer-events-none" />
 
                   {/* Name always visible in a subtle bar (hidden on hover/active) */}
                   <div className={`absolute left-0 right-0 bottom-0 p-3 z-30 bg-gradient-to-t from-black/95 to-transparent transition-opacity duration-300 ${activeOrganizerId === `mumbai-${i}` ? 'opacity-0' : 'opacity-100 group-hover:opacity-0'}`}>
@@ -132,24 +112,24 @@ export default function OrganizersSection() {
                         {(p as any).bio}
                       </div>
                     )}
-                    <div className="mt-3 flex flex-wrap gap-2">
+                    <div className="mt-3 flex flex-wrap gap-2 relative z-50">
                         { (p as any).github && (
-                          <a href={(p as any).github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#24292e] text-white px-2.5 py-1 rounded-full border border-white/6">GitHub</a>
+                          <a href={(p as any).github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#24292e] text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-[#2f363d] transition-colors">GitHub</a>
                         )}
                         { (p as any).linkedin && (
-                          <a href={(p as any).linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#0A66C2] text-white px-2.5 py-1 rounded-full border border-white/6">LinkedIn</a>
+                          <a href={(p as any).linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#0A66C2] text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-[#004182] transition-colors">LinkedIn</a>
                         )}
                         { (p as any).email && (
-                          <a href={`mailto:${(p as any).email}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#D44638] text-white px-2.5 py-1 rounded-full border border-white/6">Email</a>
+                          <a href={`mailto:${(p as any).email}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#D44638] text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-[#b23121] transition-colors">Email</a>
                         )}
                         { (p as any).profile && (
-                          <a href={(p as any).profile} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-white/6 text-white px-2.5 py-1 rounded-full border border-white/6">Profile</a>
+                          <a href={(p as any).profile} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-white/6 text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-white/10 transition-colors">Profile</a>
                         )}
                       </div>
                     {/* removed 'View' button per request */}
                   </div>
 
-                  <div className="absolute inset-0 border border-white/5 opacity-40 rounded-xl z-50"></div>
+                  <div className="absolute inset-0 border border-white/5 opacity-40 rounded-xl z-10 pointer-events-none"></div>
                 </div>
               ))}
             </div>
@@ -179,7 +159,7 @@ export default function OrganizersSection() {
                     className={`w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 ${activeOrganizerId === `pune-${i}` ? 'scale-105' : ''}`}
                   />
 
-                  <div className="absolute inset-0 z-20 bg-black/30 rounded-xl pointer-events-none" />
+                  <div className="absolute inset-0 border border-white/5 opacity-40 rounded-xl z-20 pointer-events-none" />
 
                   <div className={`absolute left-0 right-0 bottom-0 p-3 bg-gradient-to-t from-black/95 to-transparent transition-opacity duration-300 ${activeOrganizerId === `pune-${i}` ? 'opacity-0' : 'opacity-100 group-hover:opacity-0'}`}>
                     <div className="text-white font-semibold text-sm sm:text-base md:text-lg leading-tight">
@@ -201,23 +181,23 @@ export default function OrganizersSection() {
                         {(p as any).bio}
                       </div>
                     )}
-                    <div className="mt-3 flex flex-wrap gap-2">
+                    <div className="mt-3 flex flex-wrap gap-2 relative z-50">
                       { (p as any).github && (
-                        <a href={(p as any).github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#24292e] text-white px-2.5 py-1 rounded-full border border-white/6">GitHub</a>
+                        <a href={(p as any).github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#24292e] text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-[#2f363d] transition-colors">GitHub</a>
                       )}
                       { (p as any).linkedin && (
-                        <a href={(p as any).linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#0A66C2] text-white px-2.5 py-1 rounded-full border border-white/6">LinkedIn</a>
+                        <a href={(p as any).linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#0A66C2] text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-[#004182] transition-colors">LinkedIn</a>
                       )}
                       { (p as any).email && (
-                        <a href={`mailto:${(p as any).email}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#D44638] text-white px-2.5 py-1 rounded-full border border-white/6">Email</a>
+                        <a href={`mailto:${(p as any).email}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-[#D44638] text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-[#b23121] transition-colors">Email</a>
                       )}
                       { (p as any).profile && (
-                        <a href={(p as any).profile} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-white/6 text-white px-2.5 py-1 rounded-full border border-white/6">Profile</a>
+                        <a href={(p as any).profile} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs sm:text-sm bg-white/6 text-white px-2.5 py-1 rounded-full border border-white/6 hover:bg-white/10 transition-colors">Profile</a>
                       )}
                     </div>
                   </div>
 
-                  <div className="absolute inset-0 border border-white/5 opacity-40 rounded-xl z-50"></div>
+                  <div className="absolute inset-0 border border-white/5 opacity-40 rounded-xl z-10 pointer-events-none"></div>
                 </div>
               ))}
             </div>
