@@ -37,9 +37,9 @@ const timelineData = [
     {
         title: "Pre-Hackathon",
         date: "January 24, 2026",
-        description: "Mumbai + Pune meet-up",
-        stationMarathi: "ठरवायचे आहे",
-        station: "TO BE DECIDED",
+        description: "Pune meet-up",
+        stationMarathi: "डेटा एक्सल पुणे कार्यालय",
+        station: "Data Axle Pune Office",
         daysToNext: 2
     },
     {
