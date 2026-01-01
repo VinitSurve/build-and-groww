@@ -169,10 +169,10 @@ export default function SponsorsSection() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="mailto:buildgrowai@gmail.com?subject=Sponsor%20Enquiry"
-                    className="cta-btn group relative px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:scale-105 overflow-hidden"
+                    href="https://forms.gle/5ST8XkEszrgHCKLg9" target="_blank"
+                    className="cta-btn group relative text-center px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:scale-105 overflow-hidden"
                   >
-                    <span className="relative z-10">Become a Sponsor</span>
+                    <span className="relative z-10 ">Become a Sponsor</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                   <a
