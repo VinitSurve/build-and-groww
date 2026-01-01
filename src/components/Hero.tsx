@@ -16,68 +16,79 @@ export default function Hero() {
 
         <section
             id="home"
-            className="relative pt-24 sm:pt-28 md:pt-32 pb-10 sm:pb-14 md:pb-20 px-3 sm:px-6 lg:px-8 min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] flex items-center overflow-hidden"
+            className="relative pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-12 sm:pb-16 md:pb-20 lg:pb-24 px-4 sm:px-6 lg:px-8 xl:px-12 min-h-screen flex items-center overflow-hidden"
         >
             {/* Using global ContinuousBackground */}
 
             <div
-                className="relative z-10 max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-center"
+                className="relative z-10 max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 items-center"
             >
                 {/* Left Column: Text Content */}
                 <div
                     ref={cardRef}
-                    className="space-y-4 sm:space-y-6 md:space-y-8 text-center md:text-left px-2 sm:px-0 max-w-2xl mx-auto md:mx-0"
+                    className="space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 text-center md:text-left px-2 sm:px-4 md:px-0 max-w-2xl mx-auto md:mx-0"
                 >
                     {/* Announcement Badge */}
 
                     <h1
-                        className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-white leading-tight md:leading-[1.05]"
+                        className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-white leading-[1.15] sm:leading-[1.1] md:leading-[1.05]"
                         data-speed="1.1"
                     >
                         Build & Grow
                         <img
                             src="/BGAI.png"
                             alt="AI Hackathon"
-                            className="inline-block w-16 xs:w-18 sm:w-20 md:w-24 lg:w-28 xl:w-32 align-middle ml-3 md:ml-5 lg:ml-6 mb-0 md:mb-1"
+                            className="inline-block w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 align-middle ml-2 sm:ml-3 md:ml-4 lg:ml-6 mb-0 md:mb-1"
                         />
                         <br />
                         AI Hackathon 2.0
                     </h1>
                      
-                    <div className="mt-3 md:mt-6 flex justify-center md:justify-start">
+                    <div className="mt-2 sm:mt-3 md:mt-4 lg:mt-6 flex justify-center md:justify-start">
                         <img
                             src="/initiative.png"
                             alt="Initiative"
-                            className="block w-10/12 xs:w-9/12 sm:w-3/4 md:w-2/3 max-w-[420px] md:max-w-[260px] xl:max-w-[300px] object-contain pointer-events-none"
+                            className="block w-11/12 xs:w-10/12 sm:w-3/4 md:w-2/3 lg:w-3/5 max-w-[380px] sm:max-w-[420px] md:max-w-[280px] lg:max-w-[300px] xl:max-w-[320px] object-contain pointer-events-none"
                         />
                     </div>
                     <p
-                        className="text-base xs:text-lg sm:text-xl md:text-2xl text-[#9aa0a6] max-w-2xl mx-auto md:mx-0 font-light leading-relaxed"
+                        className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-[#9aa0a6] max-w-2xl mx-auto md:mx-0 font-light leading-relaxed px-2 sm:px-0"
                         data-speed="1.05"
                     >
                         Join India's premier developer hackathon. Build innovative solutions with Google technologies, connect with mentors, and compete for amazing prizes.
                     </p>
 
-                    <div className="pt-2 sm:pt-4 flex flex-row items-center justify-center md:justify-start gap-3 sm:gap-4">
+                    <div className="pt-2 sm:pt-3 md:pt-4 flex flex-row flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-4 w-full max-w-lg mx-auto md:mx-0">
                         <a
-                            className="luma-checkout--button w-[220px] xs:w-auto h-14 xs:h-16 px-6 xs:px-12 rounded-full hover:bg-[#1967d2] text-white font-medium text-lg xs:text-xl transition-all shadow-[0_0_28px_rgba(26,115,232,0.35)] hover:shadow-[0_0_40px_rgba(26,115,232,0.55)] flex items-center justify-center"
+                            className="luma-checkout--button min-w-[140px] h-10 sm:h-11 md:h-12 px-4 sm:px-6 md:px-8 rounded-full hover:bg-[#1967d2] text-white font-medium text-sm sm:text-base md:text-lg transition-all shadow-[0_0_20px_rgba(26,115,232,0.25)] hover:shadow-[0_0_28px_rgba(26,115,232,0.35)] flex items-center justify-center"
                             data-luma-action="checkout"
                             data-luma-event-id="evt-LWX8PnUfs4Xq5Us"
                             style={{ backgroundColor: '#1a73e8' }}
                         >
-                            Register Now
+                            Register for मुंबई
+                        </a>
+                        <a
+                            href="https://luma.com/event/evt-3mCXbHur70XnLMt"
+                            className="luma-checkout--button min-w-[140px] h-10 sm:h-11 md:h-12 px-4 sm:px-6 md:px-8 rounded-full hover:bg-[#1967d2] text-white font-medium text-sm sm:text-base md:text-lg transition-all shadow-[0_0_20px_rgba(26,115,232,0.25)] hover:shadow-[0_0_28px_rgba(26,115,232,0.35)] flex items-center justify-center"
+                            data-luma-action="checkout"
+                            data-luma-event-id="evt-3mCXbHur70XnLMt"
+                            style={{ backgroundColor: '#1a73e8' }}
+                        >
+                            Register for पुणे
                         </a>
                     </div>
+                    <p className="text-xs sm:text-sm md:text-base text-white/90 px-2 sm:px-0"><b>Note:</b> Grand finale will be in Mumbai only.</p>
                 </div>
 
                 {/* Right Column: Code Editor - Responsive stacking */}
-                <div className="flex items-center justify-center md:justify-end mt-8 md:mt-0 w-full">
-                    <div className="w-full max-w-[320px] xs:max-w-[360px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-[520px] xl:max-w-[580px]">
+                <div className="flex items-center justify-center md:justify-end mt-6 sm:mt-8 md:mt-0 w-full px-4 sm:px-0">
+                    <div className="w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[500px] xl:max-w-[560px]">
                         <TypewriterCode />
                     </div>
                 </div>
             </div>
-
+            
+            <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
             {/* Removed the line division for better blending */}
         </section>
     );

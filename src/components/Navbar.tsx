@@ -66,6 +66,8 @@ export default function Navbar() {
                 {/* Right Side: Register CTA (visible on extra-large screens) */}
                 <div className="hidden xl:flex items-center gap-4">
                     <a
+                        href="#home"
+                        onClick={(e) => handleScroll(e, '#home')}
                         className="luma-checkout--button hover:bg-[#1967d2] text-white px-6 py-2 rounded-full font-medium text-sm transition-all shadow-lg hover:shadow-blue-500/20 flex items-center justify-center"
                         data-luma-action="checkout"
                         data-luma-event-id="evt-LWX8PnUfs4Xq5Us"
@@ -100,10 +102,11 @@ export default function Navbar() {
                         ))}
                         <div className="pt-4 border-t border-white/10">
                             <a
+                                href="#home"
                                 className="luma-checkout--button block w-full text-center hover:bg-[#1967d2] text-white rounded-full py-2.5 font-medium"
                                 data-luma-action="checkout"
                                 data-luma-event-id="evt-LWX8PnUfs4Xq5Us"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={(e) => { handleScroll(e, '#home'); setIsMobileMenuOpen(false); }}
                                 style={{ backgroundColor: '#1a73e8' }}
                             >
                                 Register Now
