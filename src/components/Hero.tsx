@@ -12,6 +12,8 @@ export default function Hero() {
 
     return (
         
+        // Hero Section
+
         <section
             id="home"
             className="relative pt-24 sm:pt-28 md:pt-32 pb-10 sm:pb-14 md:pb-20 px-3 sm:px-6 lg:px-8 min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] flex items-center overflow-hidden"
