@@ -130,7 +130,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/fintech.jpg"
+                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/fintech.jpg"
                     alt="FinTech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -164,7 +164,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/cyber.jpg"
+                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/cyber.jpg"
                     alt="Cyber Security"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -198,7 +198,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/edutech.jpg"
+                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/edutech.jpg"
                     alt="Edu Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -232,7 +232,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/agritech.png"
+                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/agritech.png"
                     alt="Agri Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -266,7 +266,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/open_innovation.png"
+                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/open_innovation.png"
                     alt="Open Innovation"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}

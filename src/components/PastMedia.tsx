@@ -7,7 +7,7 @@ const pastEvents = [
   {
     title: "Community Gathering",
     description: "Participants networking and sharing ideas",
-    image: "/20250503_114742_imgupscaler.ai_V1(Fast)_4K.png",
+    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/20250503_114742_imgupscaler.ai_V1(Fast)_4K.png",
   },
   {
     title: "Workshop Snapshot",
