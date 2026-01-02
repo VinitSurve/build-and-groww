@@ -8,14 +8,14 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const mainPartner = { src: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/google-for-developers.png", alt: "Google for Developers", href: "https://developers.google.com" };
+const mainPartner = { src: "/google-for-developers.webp", alt: "Google for Developers", href: "https://developers.google.com" };
 
 const secondaryLogos = [
-  { src: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/AI%20Pune%20-%20Black.png", alt: "AI Pune", href: "#" },
-  { src: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/GDG%20On%20Campus%20-%20White%20Text.png", alt: "GDG On Campus", href: "#" },
-  { src: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Hyphen.png", alt: "Hyphen", href: "#" },
-  { src: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/MPSTME_18Ulfmu.png", alt: "MPSTME", href: "#" },
-  { src: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Ai_Impact_Summit.png", alt: "AI Impact Summit", href: "#" },
+  { src: "/AI%20Pune%20-%20Black.webp", alt: "AI Pune", href: "#" },
+  { src: "/GDG%20On%20Campus%20-%20White%20Text.webp", alt: "GDG On Campus", href: "#" },
+  { src: "/Hyphen.webp", alt: "Hyphen", href: "#" },
+  { src: "/MPSTME_18Ulfmu.webp", alt: "MPSTME", href: "#" },
+  { src: "/Ai_Impact_Summit.webp", alt: "AI Impact Summit", href: "#" },
 ];
 
 const neonColors = ['#7C3AED', '#06B6D4', '#F97316', '#DB2777', '#3B82F6'];

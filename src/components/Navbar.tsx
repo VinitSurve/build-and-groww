@@ -44,7 +44,7 @@ export default function Navbar() {
                         className="flex items-center gap-2 group"
                     >
                        <span className="text-xl font-medium tracking-tight text-white/90 group-hover:text-white transition-colors">
-                           <video src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/GDG%20Logoo.mp4" autoPlay loop muted className="w-10 h-10 sm:w-14 sm:h-14 inline-block mb-1" /> GDG Cloud मुंबई X पुणे
+                           <video src="/GDG%20Logoo.mp4" autoPlay loop muted className="w-10 h-10 sm:w-14 sm:h-14 inline-block mb-1" /> GDG Cloud मुंबई X पुणे
                         </span>
                     </a>
                 </div>

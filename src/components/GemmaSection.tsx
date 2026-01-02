@@ -125,7 +125,7 @@ export default function GemmaSection() {
                     style={{ zIndex: 1, transform: "translateY(-22px)" }}
                   >
                     <video
-                      src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/video.mp4"
+                      src="/video.mp4"
                       autoPlay
                       loop
                       muted
@@ -150,7 +150,7 @@ export default function GemmaSection() {
                     }}
                   >
                     <img
-                      src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Gateway.png"
+                      src="/Gateway.webp"
                       alt="Gateway of India"
                       className="w-[170px] sm:w-[180px] md:w-[200px] lg:w-[220px] object-contain"
                     />
@@ -170,7 +170,7 @@ export default function GemmaSection() {
                     }}
                   >
                     <img
-                      src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Shaniwaar_Wada-removebg-preview.png"
+                      src="/Shaniwaar_Wada-removebg-preview.webp"
                       alt="Shaniwar Wada"
                       className="w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] object-contain"
                     />

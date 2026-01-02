@@ -7,22 +7,22 @@ const pastEvents = [
   {
     title: "Community Gathering",
     description: "Participants networking and sharing ideas",
-    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/20250503_114742_imgupscaler.ai_V1(Fast)_4K.png",
+    image: "20250503_114742_imgupscaler.ai_V1(Fast)_4K.webp",
   },
   {
     title: "Workshop Snapshot",
     description: "Hands-on session during the event",
-    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_0758.JPG",
+    image: "/IMG_0758.webp",
   },
   {
     title: "Demo Highlights",
     description: "Projects showcased on demo day",
-    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_0678_imgupscaler.ai_V1(Fast)_4K.png",
+    image: "IMG_0678_imgupscaler.ai_V1(Fast)_4K.webp",
   },
   {
     title: "Stage Moments",
     description: "Awards and closing highlights",
-    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_0684_imgupscaler.ai_V1(Fast)_4K.png",
+    image: "IMG_0684_imgupscaler.ai_V1(Fast)_4K.webp",
   },
 ]
 

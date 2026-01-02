@@ -221,7 +221,7 @@ export default function TimelineSection() {
                         style={{ willChange: 'transform' }}
                     >
                         <Image 
-                            src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/train1.png" 
+                            src="/train1.webp" 
                             alt="Metro Train" 
                             width={120} 
                             height={120}

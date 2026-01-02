@@ -131,7 +131,7 @@ export default function PuneSection() {
             {/* CARD 1: Community Impact */}
             <div className="bg-[#202124] rounded-[2.5rem] p-8 flex gap-8 animate-reveal pointer-events-auto">
               <div className="w-48 h-48 bg-black rounded-3xl flex items-center justify-center overflow-hidden">
-                <img src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_2046.JPG" alt="Community Impact" className="object-cover w-full h-full rounded-3xl" />
+                <img src="/IMG_2046.webp" alt="Community Impact" className="object-cover w-full h-full rounded-3xl" />
               </div>
               <div>
                 <h3 className="text-2xl font-medium text-white">Community Impact</h3>
@@ -147,7 +147,7 @@ export default function PuneSection() {
             {/* CARD 2: Events & Reach */}
             <div className="bg-[#202124] rounded-[2.5rem] p-8 flex gap-8 animate-reveal pointer-events-auto">
               <div className="w-48 h-48 bg-black rounded-3xl flex items-center justify-center overflow-hidden">
-                <img src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_1674.JPG" alt="Events & Reach" className="object-cover w-full h-full rounded-3xl" />
+                <img src="/IMG_1674.webp" alt="Events & Reach" className="object-cover w-full h-full rounded-3xl" />
               </div>
               <div>
                 <h3 className="text-2xl font-medium text-white">Events & Reach</h3>

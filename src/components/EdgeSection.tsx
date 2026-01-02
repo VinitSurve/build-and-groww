@@ -185,7 +185,7 @@ export default function EdgeSection() {
                                                     <img
                                                         ref={gatewayRef}
                                                         onClick={handleGatewayClick}
-                                                        src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Gateway%20Mumbai.png"
+                                                        src="/Gateway%20Mumbai.webp"
                                                         alt="Gateway of India"
                                                         className="w-full h-auto object-contain rounded-lg shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
                                                     />
@@ -230,7 +230,7 @@ export default function EdgeSection() {
                                 <div className="animate-reveal bg-gradient-to-br from-[#1a1c20] to-[#16171a] rounded-[2.5rem] p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start border border-white/5 shadow-2xl hover:border-cyan-400/20 transition-all duration-300 group">
                                     <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 rounded-3xl overflow-hidden border border-white/10 relative group-hover:border-cyan-400/30 transition-all">
                                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent z-0" />
-                                        <img src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_2046.JPG" alt="Community Impact" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+                                        <img src="/IMG_2046.webp" alt="Community Impact" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
                                     </div>
 
                                     <div className="flex-1 space-y-3">
@@ -248,7 +248,7 @@ export default function EdgeSection() {
                                 <div className="animate-reveal bg-gradient-to-br from-[#1a1c20] to-[#16171a] rounded-[2.5rem] p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start border border-white/5 shadow-2xl hover:border-cyan-400/20 transition-all duration-300 group">
                                     <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 rounded-3xl overflow-hidden border border-white/10 relative group-hover:border-cyan-400/30 transition-all">
                                         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent z-0" />
-                                        <img src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_1674.JPG" alt="Events & Reach" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+                                        <img src="/IMG_1674.webp" alt="Events & Reach" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
                                     </div>
 
                                     <div className="flex-1 space-y-3">

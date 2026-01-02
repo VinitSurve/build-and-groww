@@ -36,7 +36,7 @@ export default function Hero() {
                     >
                         Build & Grow
                         <img
-                            src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/BGAI.png"
+                            src="/BGAI.webp"
                             alt="AI Hackathon"
                             className="inline-block w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 align-middle ml-2 sm:ml-3 md:ml-4 lg:ml-6 mb-0 md:mb-1"
                         />
@@ -46,7 +46,7 @@ export default function Hero() {
                      
                     <div className="mt-2 sm:mt-3 md:mt-4 lg:mt-6 flex justify-center md:justify-start">
                         <img
-                            src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/initiative.png"
+                            src="/initiative.webp"
                             alt="Initiative"
                             className="block w-11/12 xs:w-10/12 sm:w-3/4 md:w-2/3 lg:w-3/5 max-w-[380px] sm:max-w-[420px] md:max-w-[280px] lg:max-w-[300px] xl:max-w-[320px] object-contain pointer-events-none"
                         />

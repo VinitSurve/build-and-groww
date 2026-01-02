@@ -96,7 +96,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/health.png"
+                    src="/health.webp"
                     alt="Health Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -130,7 +130,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/fintech.jpg"
+                    src="/fintech.webp"
                     alt="FinTech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -164,7 +164,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/cyber.jpg"
+                    src="/cyber.webp"
                     alt="Cyber Security"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -198,7 +198,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/edutech.jpg"
+                    src="/edutech.webp"
                     alt="Edu Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -232,7 +232,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/agritech.png"
+                    src="/agritech.webp"
                     alt="Agri Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -266,7 +266,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/open_innovation.png"
+                    src="/open_innovation.webp"
                     alt="Open Innovation"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
