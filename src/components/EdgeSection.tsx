@@ -185,7 +185,7 @@ export default function EdgeSection() {
                                                     <img
                                                         ref={gatewayRef}
                                                         onClick={handleGatewayClick}
-                                                        src="/Gateway Mumbai.png"
+                                                        src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Gateway%20Mumbai.png"
                                                         alt="Gateway of India"
                                                         className="w-full h-auto object-contain rounded-lg shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
                                                     />

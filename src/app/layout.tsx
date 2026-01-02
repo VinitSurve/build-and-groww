@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: "Build & Grow AI Hackathon 2.0",
   description: "Build and Grow AI Hackathon by GDG Cloud Mumbai and GDG Cloud Pune",
   icons: {
-    icon: "/GDG.png",
-    shortcut: "/GDG.png",
-    apple: "/GDG.png",
+    icon: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/GDG.png",
+    shortcut: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/GDG.png",
+    apple: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/GDG.png",
   },
 };
 

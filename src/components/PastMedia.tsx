@@ -12,17 +12,17 @@ const pastEvents = [
   {
     title: "Workshop Snapshot",
     description: "Hands-on session during the event",
-    image: "/IMG_0758.JPG",
+    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_0758.JPG",
   },
   {
     title: "Demo Highlights",
     description: "Projects showcased on demo day",
-    image: "/IMG_0678_imgupscaler.ai_V1(Fast)_4K.png",
+    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_0678_imgupscaler.ai_V1(Fast)_4K.png",
   },
   {
     title: "Stage Moments",
     description: "Awards and closing highlights",
-    image: "/IMG_0684_imgupscaler.ai_V1(Fast)_4K.png",
+    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/IMG_0684_imgupscaler.ai_V1(Fast)_4K.png",
   },
 ]
 

@@ -80,7 +80,7 @@ const developers = [
     name: "Grishma Thakare",
     title: "Full Stack Dev",
     affiliation: "GDG Cloud Mumbai Member",
-    image: "/Grishma Thakur.jpeg",
+    image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Grishma%20Thakur.jpeg",
     github: "https://github.com/grishma-blip",
     linkedin: "https://www.linkedin.com/in/grishma-thakare-793732285/",
     email: "grishmathakare21@gmail.com",

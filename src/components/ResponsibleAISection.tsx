@@ -158,7 +158,7 @@ export default function ResponsibleAISection() {
                                         <div className="absolute -inset-6 rounded-full opacity-30 pointer-events-none" style={neonStyle(1)} />
 
                                         <img
-                                            src="/Shaniwar Wada Pune.png"
+                                            src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Shaniwar%20Wada%20Pune.png"
                                             alt="Shaniwar Wada"
                                             className="w-[250px] sm:w-[300px] md:w-[440px] lg:w-[520px] h-auto object-contain mb-3 mx-auto rounded-lg shadow-2xl"
                                         />
