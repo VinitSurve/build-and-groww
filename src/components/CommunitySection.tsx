@@ -56,7 +56,7 @@ export default function CommunitySection() {
                     {/* Background image confined inside the blue frame area */}
                     <div className="absolute inset-6 md:inset-10 mx-auto w-full max-w-[1200px] h-full pointer-events-none z-0">
                         <div className="absolute inset-0 rounded-xl overflow-hidden">
-                            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/community.jpg')" }} />
+                            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/community.jpg')" }} />
                             <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
                         </div>
                     </div>

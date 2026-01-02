@@ -6,16 +6,16 @@ import { useEffect, useRef, useState } from "react";
 
 const mumbaiOrganizers = [
   { name: "Abhishek Sharma", role: "Lead Cloud Engineer", company: "Searce Inc", bio: "Google Developer Expert · Cloud Adviser · Tech Speaker", image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/abhishek_sharma_RQClIHO.webp", profile: "https://linktr.ee/acloudpotato", github: "https://github.com/acloudpotato", linkedin: "https://www.linkedin.com/in/acloudpotato/" },
-  { name: "Niharika Dhanik", role: "Cloud Engineer", company: "Searce Inc", bio: "Cloud whiz, community builder — obsessed with observability and sharing knowledge.", image: "/Niharika Dhanik.jpeg", profile: "https://linktr.ee/niharikadhanik", github: "https://github.com/niharicka2602/", linkedin: "https://www.linkedin.com/in/niharikadhanik/" },
-  { name: "Rushabh Mahale", role: "Cloud Engineer", company: "Searce inc", image: "/rushabh_mahale_N4nLK69.webp", profile: "https://gdg.community.dev/u/m4yrkb/#/about", github: "https://github.com/rushabhmahale", linkedin: "https://www.linkedin.com/in/rushabh-mahale-9507701a5" },
+  { name: "Niharika Dhanik", role: "Cloud Engineer", company: "Searce Inc", bio: "Cloud whiz, community builder — obsessed with observability and sharing knowledge.", image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/Niharika%20Dhanik.jpeg", profile: "https://linktr.ee/niharikadhanik", github: "https://github.com/niharicka2602/", linkedin: "https://www.linkedin.com/in/niharikadhanik/" },
+  { name: "Rushabh Mahale", role: "Cloud Engineer", company: "Searce inc", image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/rushabh_mahale_N4nLK69.webp", profile: "https://gdg.community.dev/u/m4yrkb/#/about", github: "https://github.com/rushabhmahale", linkedin: "https://www.linkedin.com/in/rushabh-mahale-9507701a5" },
   { name: "Nikunj Shah", role: "Sr. AVP- India & Mauritius", company: "Winjit Tech", image: "/nikunj_shah_3SB4kkE.webp", profile: "#", github: "#", linkedin: "#" }
 ];
 
 const puneOrganizers = [
-  { name: "Antrixsh Gupta", role: "GDG Organizer", company: "", image: "/antrixsh_gupta_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "https://www.linkedin.com/in/antrixshgupta" },
-  { name: "Pratik Kale", role: "Co-Organizer", company: "Impulsive Web", image: "/pratik_kale_JE4xYmT_imgupscaler.ai_V1(Fast)_2K.png", profile: "pratikkale.in", email: "ppvkale@gmail.com", linkedin: "https://www.linkedin.com/in/pratikkalein/" },
-  { name: "Dnyanada Mahajan", role: "Co Organizer", company: "Gen Digital - NortonLifeLock", image: "/dnyanada_mahajan_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "linkedin.com/in/dnyanadam" },
-  { name: "Vatsal Jain", role: "Event Organizer", company: "vConstruct Pvt Ltd", image: "/vatsal_jain_9uuB5SU_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "linkedin.com/in/vatsaljain0205" }
+  { name: "Antrixsh Gupta", role: "GDG Organizer", company: "", image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/antrixsh_gupta_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "https://www.linkedin.com/in/antrixshgupta" },
+  { name: "Pratik Kale", role: "Co-Organizer", company: "Impulsive Web", image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/pratik_kale_JE4xYmT_imgupscaler.ai_V1(Fast)_2K.png", profile: "pratikkale.in", email: "ppvkale@gmail.com", linkedin: "https://www.linkedin.com/in/pratikkalein/" },
+  { name: "Dnyanada Mahajan", role: "Co Organizer", company: "Gen Digital - NortonLifeLock", image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/dnyanada_mahajan_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "linkedin.com/in/dnyanadam" },
+  { name: "Vatsal Jain", role: "Event Organizer", company: "vConstruct Pvt Ltd", image: "https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/vatsal_jain_9uuB5SU_imgupscaler.ai_V1(Fast)_2K.png", linkedin: "linkedin.com/in/vatsaljain0205" }
 ];
 
 export default function OrganizersSection() {

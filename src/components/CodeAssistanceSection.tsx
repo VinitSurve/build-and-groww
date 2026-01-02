@@ -96,7 +96,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/health.png"
+                    src="https://rcmsiziewjaxxwhssnvl.supabase.co/storage/v1/object/public/Images/health.png"
                     alt="Health Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
