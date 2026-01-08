@@ -14,16 +14,16 @@ const timelineData = [
         title: "Registration Starts",
         date: "January 1, 2026",
         description: "Form your teams & onboard",
-        stationMarathi: "ठरवायचे आहे",
-        station: "TO BE DECIDED",
+        stationMarathi: "चला सुरुवात करूया",
+        station: "Lets Begin",
         daysToNext: 10
     },
     {
         title: "Workshop 1",
         date: "January 10, 2026",
-        description: "Hands-on AI fundamentals",
-        stationMarathi: "ठरवायचे आहे",
-        station: "TO BE DECIDED",
+        description: "Build and Grow : Workshop",
+        stationMarathi: "डेटा एक्सल पुणे कार्यालय",
+        station: "Data Axle Pune Office",
         daysToNext: 7
     },
     {
