@@ -15,6 +15,7 @@ import FAQSection from "@/components/FAQSection";
 import dynamic from "next/dynamic";
 import SponsorsSection from "@/components/SponsorsSection";
 import PartnersSection from "@/components/PartnersSection";
+import { Analytics } from "@vercel/analytics/next"
 
 const TimelineSection = dynamic(() => import("@/components/TimelineSection"), {
   loading: () => <div className="h-96 w-full animate-pulse bg-white/5 rounded-3xl" />
@@ -39,7 +40,7 @@ export default function Home() {
       <DevelopersSection />
       <FAQSection />
       <CommunitySection />
-
+      <Analytics />
       <Footer />
     </main>
   );
