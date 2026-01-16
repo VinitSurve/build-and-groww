@@ -32,7 +32,7 @@ const timelineData = [
         description: "Pune Hackathon",
         stationMarathi: "डेटा एक्सल पुणे कार्यालय",
         station: "Data Axle Pune Office",
-        daysToNext: 2
+        daysToNext: 0
     },
     {
         title: "Pre-Hackathon",
@@ -40,7 +40,7 @@ const timelineData = [
         description: "Mumbai Hackathon",
         stationMarathi: "SVKM नरसी मोंजी इन्स्टिट्यूट ऑफ मॅनेजमेंट स्टडीज, अंधेरी",
         station: "SVKM Narsee Monjee Institute of Management Studies, Andheri",
-        daysToNext: 2
+        daysToNext: 1
     },
     {
         title: "Grand Finale",
