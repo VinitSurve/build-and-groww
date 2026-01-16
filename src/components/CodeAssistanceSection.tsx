@@ -96,7 +96,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/health.webp"
+                    src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media/health.webp"
                     alt="Health Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
