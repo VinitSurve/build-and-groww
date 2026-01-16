@@ -176,7 +176,7 @@ export default function SponsorsSection() {
                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                   <a
-                    href="/BuildGrowAI_Sponsorship_Deck.pdf"
+                    href="https://drive.google.com/file/d/1HZvnBm8kNEaroL8eHsPJzuooqlTOZixf/view?usp=drivesdk"
                     target="_blank"
                     className="cta-btn px-8 py-4 rounded-full border-2 border-cyan-400/40 text-cyan-300 hover:bg-cyan-400/10 hover:border-cyan-400/60 font-semibold transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.3)] text-center"
                   >

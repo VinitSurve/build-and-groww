@@ -27,27 +27,28 @@ const timelineData = [
         daysToNext: 7
     },
     {
-        title: "Workshop 2",
-        date: "January 17, 2026",
-        description: "Deep dive into cloud & ML",
-        stationMarathi: "ठरवायचे आहे",
-        station: "TO BE DECIDED",
-        daysToNext: 7
-    },
-    {
         title: "Pre-Hackathon",
-        date: "January 24, 2026",
-        description: "Pune meet-up",
+        date: "January 24, 25 2026",
+        description: "Pune Hackathon",
         stationMarathi: "डेटा एक्सल पुणे कार्यालय",
         station: "Data Axle Pune Office",
         daysToNext: 2
     },
     {
-        title: "Finale",
+        title: "Pre-Hackathon",
+        date: "January 24, 25 2026",
+        description: "Mumbai Hackathon",
+        stationMarathi: "SVKM नरसी मोंजी इन्स्टिट्यूट ऑफ मॅनेजमेंट स्टडीज, अंधेरी",
+        station: "SVKM Narsee Monjee Institute of Management Studies, Andheri",
+        daysToNext: 2
+    },
+    {
+        title: "Grand Finale",
         date: "January 26, 2026",
+        time: "9:00 AM Onwards",
         description: "Grand Finale at Mumbai",
-        stationMarathi: "ठरवायचे आहे",
-        station: "TO BE DECIDED",
+        stationMarathi: "जिओ इन्स्टिट्यूट, नवी मुंबई",
+        station: "Jio Institute, Navi Mumbai",
         daysToNext: 0
     },
 ];
@@ -297,6 +298,11 @@ export default function TimelineSection() {
                                                         }`}>
                                                             {item.date}
                                                         </div>
+                                                        {/* <div className={`text-[10px] sm:text-xs md:text-sm font-mono transition-colors duration-500 ${
+                                                            isActive ? 'text-cyan-300' : 'text-cyan-400/60'
+                                                        }`}>
+                                                            {item.time}
+                                                        </div> */}
                                                         <p className={`text-[10px] sm:text-xs md:text-sm font-medium leading-relaxed transition-colors duration-500 ${
                                                             isActive ? 'text-gray-200' : 'text-gray-400/70'
                                                         }`}>
