@@ -40,6 +40,11 @@ const snackingEnergyPartners = [
   { src: "/gofig.webp", alt: "Gofig", href: "#" },
 ];
 
+const platformPartners = [
+  { src: "/hack%20culture.webp", alt: "Hack Culture", href: "#" },
+  { src: "/data%20axle.webp", alt: "Data Axle", href: "#" },
+];
+
 const neonColors = ['#7C3AED', '#06B6D4', '#F97316', '#DB2777', '#3B82F6'];
 const neonStyle = (i: number) => ({
   backgroundImage: `radial-gradient(circle at 30% 30%, ${neonColors[i % neonColors.length]}33 0%, transparent 35%), radial-gradient(circle at 70% 70%, ${neonColors[(i+1) % neonColors.length]}22 0%, transparent 45%)`,
@@ -260,8 +265,8 @@ export default function PartnersSection() {
                         className="neon-glow absolute inset-0 z-0 opacity-25 group-hover:opacity-80 transition-all duration-500 rounded-3xl"
                         style={neonStyle(11)}
                       />
-                      <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
-                        <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                      <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-4 sm:p-6 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 100 }}>
+                        <img src={l.src} alt={l.alt} className={l.alt === 'Hack Culture' ? 'h-10 sm:h-12 md:h-16 object-contain' : 'h-20 sm:h-24 md:h-28 object-contain'} />
                         <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                           <div 
                             className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
@@ -339,7 +344,60 @@ export default function PartnersSection() {
               </div>
             </div>
 
-            {/* Strategy Partners */}
+              {/* Platform Partners */}
+              <div className="mt-16 sm:mt-20">
+                <h3 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 text-center mb-8">
+                  Platform Partners
+                </h3>
+                <div className="flex justify-center gap-6 lg:gap-8 flex-wrap">
+                  {platformPartners.map((l, i) => {
+                    const id = `platform-partner-${i}`;
+                    return (
+                      <a
+                        key={i}
+                        href={l.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="partner-card group relative"
+                        onPointerDown={handlePointerDown(id)}
+                        onPointerUp={clearLongPress(id)}
+                        onPointerLeave={clearLongPress(id)}
+                        onPointerCancel={clearLongPress(id)}
+                        onClick={handleClick(id)}
+                        onMouseEnter={() => setHoveredCard(id)}
+                        onMouseLeave={() => setHoveredCard(null)}
+                      >
+                        <div
+                          className="neon-glow absolute inset-0 z-0 opacity-25 group-hover:opacity-80 transition-all duration-500 rounded-3xl"
+                          style={neonStyle(7 + i)}
+                        />
+                        <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
+                          <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                          <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
+                            <div 
+                              className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
+                              style={{ 
+                                width: hoveredCard === id ? '100%' : '0%',
+                                boxShadow: hoveredCard === id ? '0 0 10px rgba(6,182,212,0.8)' : 'none'
+                              }}
+                            />
+                          </div>
+                        </div>
+                        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-gradient-to-r from-cyan-500/20 to-purple-600/20 border border-cyan-400/30 text-xs text-cyan-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                          {l.alt}
+                        </div>
+                        {tooltipVisibleId === id && (
+                          <div className="absolute left-1/2 transform -translate-x-1/2 -top-12 z-40 px-3 py-1.5 rounded-lg bg-black/90 text-white text-xs shadow-2xl border border-cyan-400/30">
+                            {l.alt}
+                          </div>
+                        )}
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Strategy Partners */}
             <div className="mt-16 sm:mt-20">
               <h3 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 text-center mb-8">
                 Strategy Partner
