@@ -14,9 +14,11 @@ const mainPartners = [
 ];
 
 const communityPartners = [
-  { src: "/AI%20Pune%20-%20Black.webp", alt: "AI Pune", href: "#" },
-  { src: "/GDG%20On%20Campus%20-%20White%20Text.webp", alt: "GDG On Campus", href: "#" },
-  { src: "/Hyphen.webp", alt: "Hyphen", href: "#" },
+  { src: "/GDGOC%20Pune.webp", alt: "GDGOC Pune", href: "#" },
+  { src: "/Google%20Student%20Ambassador_ITMBU_Black_Logo.webp", alt: "Google Student Ambassador ITMBU", href: "#" },
+  { src: "/Indian%20OpenSource%20Community.webp", alt: "Indian OpenSource Community", href: "#" },
+  { src: "/Pune_AI_Community_Logo_colored-removebg-preview.webp", alt: "Pune AI Community", href: "#" },
+  { src: "/The_ai_collective.webp", alt: "The AI Collective", href: "#" },
 ];
 
 const venuePartners = [
@@ -29,7 +31,7 @@ const academicPartners = [
 ];
 
 const knowledgePartners = [
-  { src: "/stepwik-logo-light (1).webp", alt: "Stepwik", href: "#" },
+  { src: "/stepwik-logo-light%20%281%29.webp", alt: "Stepwik", href: "#" },
 ];
 
 const strategyPartners = [
@@ -238,6 +240,58 @@ export default function PartnersSection() {
             </div>
 
           
+
+            <div className="mt-12 sm:mt-16">
+              <h3 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 text-center mb-8">
+                Knowledge Partner
+              </h3>
+              <div className="flex justify-center">
+                {knowledgePartners.map((l, i) => {
+                  const id = `knowledge-partner-${i}`;
+                  return (
+                    <a
+                      key={i}
+                      href={l.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="partner-card group relative"
+                      onPointerDown={handlePointerDown(id)}
+                      onPointerUp={clearLongPress(id)}
+                      onPointerLeave={clearLongPress(id)}
+                      onPointerCancel={clearLongPress(id)}
+                      onClick={handleClick(id)}
+                      onMouseEnter={() => setHoveredCard(id)}
+                      onMouseLeave={() => setHoveredCard(null)}
+                    >
+                      <div
+                        className="neon-glow absolute inset-0 z-0 opacity-25 group-hover:opacity-80 transition-all duration-500 rounded-3xl"
+                        style={neonStyle(5 + i)}
+                      />
+                      <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
+                        <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                        <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
+                          <div 
+                            className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
+                            style={{ 
+                              width: hoveredCard === id ? '100%' : '0%',
+                              boxShadow: hoveredCard === id ? '0 0 10px rgba(6,182,212,0.8)' : 'none'
+                            }}
+                          />
+                        </div>
+                      </div>
+                      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-gradient-to-r from-cyan-500/20 to-purple-600/20 border border-cyan-400/30 text-xs text-cyan-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                        {l.alt}
+                      </div>
+                      {tooltipVisibleId === id && (
+                        <div className="absolute left-1/2 transform -translate-x-1/2 -top-12 z-40 px-3 py-1.5 rounded-lg bg-black/90 text-white text-xs shadow-2xl border border-cyan-400/30">
+                          {l.alt}
+                        </div>
+                      )}
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
 
             <div className="mt-16 sm:mt-20">
               <h3 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 text-center mb-8">
