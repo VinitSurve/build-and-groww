@@ -2,8 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";import CDNImage from './CDNImage';
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
 }
@@ -157,8 +156,8 @@ export default function ResponsibleAISection() {
                                         {/* soft neon halo behind image */}
                                         <div className="absolute -inset-6 rounded-full opacity-30 pointer-events-none" style={neonStyle(1)} />
 
-                                        <img
-                                            src="/Shaniwar%20Wada%20Pune.webp"
+                                        <CDNImage
+                                            src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Shaniwar%20Wada%20Pune.webp"
                                             alt="Shaniwar Wada"
                                             className="w-[250px] sm:w-[300px] md:w-[440px] lg:w-[520px] h-auto object-contain mb-3 mx-auto rounded-lg shadow-2xl"
                                         />
@@ -201,7 +200,7 @@ export default function ResponsibleAISection() {
                         <div className="animate-reveal bg-gradient-to-br from-[#1a1c20] to-[#16171a] rounded-[2.5rem] p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start border border-white/5 shadow-2xl hover:border-cyan-400/20 transition-all duration-300 group">
                             <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 rounded-3xl overflow-hidden border border-white/10 relative group-hover:border-cyan-400/30 transition-all">
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent z-0" />
-                                <img src="/IMG_1596.webp" alt="Learning Culture" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+                                <CDNImage src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1596.webp" alt="Learning Culture" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
                             </div>
 
                             <div className="flex-1 space-y-3">
@@ -219,7 +218,7 @@ export default function ResponsibleAISection() {
                         <div className="animate-reveal bg-gradient-to-br from-[#1a1c20] to-[#16171a] rounded-[2.5rem] p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start border border-white/5 shadow-2xl hover:border-cyan-400/20 transition-all duration-300 group">
                             <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 rounded-3xl overflow-hidden border border-white/10 relative group-hover:border-cyan-400/30 transition-all">
                                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent z-0" />
-                                <img src="/IMG_1816.webp" alt="Builder Community" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+                                <CDNImage src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1816.webp" alt="Builder Community" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
                             </div>
 
                             <div className="flex-1 space-y-3">

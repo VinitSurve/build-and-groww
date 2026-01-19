@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
+import CDNVideo from './CDNVideo';
 
 const navLinks = [
     { label: 'Collaboration', href: '#collaboration' },
@@ -44,7 +45,7 @@ export default function Navbar() {
                         className="flex items-center gap-2 group"
                     >
                        <span className="text-xl font-medium tracking-tight text-white/90 group-hover:text-white transition-colors">
-                           <video src="/GDG%20Logoo.mp4" autoPlay loop muted className="w-10 h-10 sm:w-14 sm:h-14 inline-block mb-1" /> GDG Cloud मुंबई X पुणे
+                           <CDNVideo src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/GDG%20Logoo.mp4" autoPlay loop muted className="w-10 h-10 sm:w-14 sm:h-14 inline-block mb-1" /> GDG Cloud मुंबई X पुणे
                         </span>
                     </a>
                 </div>

@@ -3,48 +3,50 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CDNImage from './CDNImage';
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
 const mainPartners = [
-  { src: "/google-for-developers.webp", alt: "Google for Developers", href: "https://developers.google.com" },
-  { src: "/Ai_Impact_Summit.webp", alt: "AI Impact Summit", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/google-for-developers.webp", alt: "Google for Developers", href: "https://developers.google.com" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Ai_Impact_Summit.webp", alt: "AI Impact Summit", href: "#" },
 ];
 
 const communityPartners = [
-  { src: "/GDGOC%20Pune.webp", alt: "GDGOC Pune", href: "#" },
-  { src: "/Google%20Student%20Ambassador_ITMBU_Black_Logo.webp", alt: "Google Student Ambassador ITMBU", href: "#" },
-  { src: "/Indian%20OpenSource%20Community.webp", alt: "Indian OpenSource Community", href: "#" },
-  { src: "/Pune_AI_Community_Logo_colored-removebg-preview.webp", alt: "Pune AI Community", href: "#" },
-  { src: "/The_ai_collective.webp", alt: "The AI Collective", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/AI%20Pune%20-%20Black.webp", alt: "AI Pune", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/GDGOC%20Pune.webp", alt: "GDGOC Pune", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Google%20Student%20Ambassador_ITMBU_Black_Logo.webp", alt: "Google Student Ambassador ITMBU", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Indian%20OpenSource%20Community.webp", alt: "Indian OpenSource Community", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Pune_AI_Community_Logo_colored-removebg-preview.webp", alt: "Pune AI Community", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/The_ai_collective.webp", alt: "The AI Collective", href: "#" },
 ];
 
 const venuePartners = [
-  { src: "/MPSTME_18Ulfmu.webp", alt: "MPSTME", href: "#" },
-  { src: "/Jio Institue Transparent Logo.webp", alt: "Jio Institute", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/MPSTME_18Ulfmu.webp", alt: "MPSTME", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Jio%20Institue%20Transparent%20Logo.webp", alt: "Jio Institute", href: "#" },
 ];
 
 const academicPartners = [
-  { src: "/Jio Institue Transparent Logo.webp", alt: "Jio Institute", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Jio%20Institue%20Transparent%20Logo.webp", alt: "Jio Institute", href: "#" },
 ];
 
 const knowledgePartners = [
-  { src: "/stepwik-logo-light%20%281%29.webp", alt: "Stepwik", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/stepwik-logo-light%20%281%29.webp", alt: "Stepwik", href: "#" },
 ];
 
 const strategyPartners = [
-  { src: "/solace.webp", alt: "Solace", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/solace.webp", alt: "Solace", href: "#" },
 ];
 
 const snackingEnergyPartners = [
-  { src: "/gofig.webp", alt: "Gofig", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/gofig.webp", alt: "Gofig", href: "#" },
 ];
 
 const platformPartners = [
-  { src: "/hack%20culture.webp", alt: "Hack Culture", href: "#" },
-  { src: "/data%20axle.webp", alt: "Data Axle", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/hack%20culture.webp", alt: "Hack Culture", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/data%20axle.webp", alt: "Data Axle", href: "#" },
 ];
 
 const neonColors = ['#7C3AED', '#06B6D4', '#F97316', '#DB2777', '#3B82F6'];
@@ -209,7 +211,7 @@ export default function PartnersSection() {
 
                     {/* Glass card */}
                     <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-4 sm:p-10 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40">
-                      <img src={partner.src} alt={partner.alt} className="h-24 sm:h-28 md:h-32 lg:h-36 object-contain" />
+                      <CDNImage src={partner.src} alt={partner.alt} className="h-24 sm:h-28 md:h-32 lg:h-36 object-contain" />
                       
                       {/* Animated bottom accent */}
                       <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
@@ -268,7 +270,7 @@ export default function PartnersSection() {
                         style={neonStyle(5 + i)}
                       />
                       <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
-                        <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                        <CDNImage src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
                         <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                           <div 
                             className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
@@ -320,7 +322,7 @@ export default function PartnersSection() {
                         style={neonStyle(11)}
                       />
                       <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-4 sm:p-6 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 100 }}>
-                        <img src={l.src} alt={l.alt} className={l.alt === 'Hack Culture' ? 'h-10 sm:h-12 md:h-16 object-contain' : 'h-20 sm:h-24 md:h-28 object-contain'} />
+                        <CDNImage src={l.src} alt={l.alt} className={l.alt === 'Hack Culture' ? 'h-10 sm:h-12 md:h-16 object-contain' : 'h-20 sm:h-24 md:h-28 object-contain'} />
                         <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                           <div 
                             className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
@@ -373,7 +375,7 @@ export default function PartnersSection() {
                         style={neonStyle(9 + i)}
                       />
                       <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
-                        <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                        <CDNImage src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
                         <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                           <div 
                             className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
@@ -426,7 +428,7 @@ export default function PartnersSection() {
                           style={neonStyle(7 + i)}
                         />
                         <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
-                          <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                          <CDNImage src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
                           <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                             <div 
                               className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
@@ -479,7 +481,7 @@ export default function PartnersSection() {
                         style={neonStyle(7)}
                       />
                       <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
-                        <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                        <CDNImage src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
                         <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                           <div 
                             className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
@@ -532,7 +534,7 @@ export default function PartnersSection() {
                         style={neonStyle(8)}
                       />
                       <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-6 sm:p-8 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 140 }}>
-                        <img src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
+                        <CDNImage src={l.src} alt={l.alt} className="h-20 sm:h-24 md:h-28 object-contain" />
                         <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                           <div 
                             className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"
@@ -584,7 +586,7 @@ export default function PartnersSection() {
                         style={neonStyle(9 + i)}
                       />
                         <div className="relative z-10 bg-gradient-to-br from-white/8 to-white/[0.02] backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-4 sm:p-6 flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_20px_60px_-12px_rgba(6,182,212,0.4)] group-hover:border-cyan-400/40" style={{ minHeight: 110 }}>
-                          <img src={l.src} alt={l.alt} className="h-12 sm:h-16 md:h-20 object-contain" />
+                          <CDNImage src={l.src} alt={l.alt} className="h-12 sm:h-16 md:h-20 object-contain" />
                         <div className="absolute bottom-0 left-0 right-0 rounded-full bg-gradient-to-r from-cyan-400/50 via-purple-500/50 to-blue-500/50 overflow-hidden">
                           <div 
                             className="h-full bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 transition-all duration-700"

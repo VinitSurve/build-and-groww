@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CDNVideo from './CDNVideo';
 
 export default function Footer() {
     return (
@@ -10,7 +11,7 @@ export default function Footer() {
                     <div>
                         <div className="mb-8">
                             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-2">
-                                <video src="/GDG%20Logoo.mp4" autoPlay loop muted className="inline-block mb-1 w-12 h-12"></video> GDG Cloud मुंबई
+                                <CDNVideo src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/GDG%20Logoo.mp4" autoPlay loop muted className="inline-block mb-1 w-12 h-12" /> GDG Cloud मुंबई
                             </h2>
                             <p className="text-sm text-gray-400">
                                 Building the future of AI with the Google Developer Community
@@ -89,7 +90,7 @@ export default function Footer() {
                     <div>
                         <div className="mb-8">
                             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-2">
-                                 <video src="/GDG%20Logoo.mp4" autoPlay loop muted className="inline-block mb-1 w-12 h-12"></video> GDG Cloud पुणे
+                                 <CDNVideo src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/GDG%20Logoo.mp4" autoPlay loop muted className="inline-block mb-1 w-12 h-12" /> GDG Cloud पुणे
                             </h2>
                             <p className="text-sm text-gray-400">
                                 Fostering innovation and learning in the developer community

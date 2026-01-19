@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import CDNVideo from './CDNVideo';
+import CDNImage from './CDNImage';
 
 export default function GemmaSection() {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -124,8 +126,8 @@ export default function GemmaSection() {
                     className="absolute inset-0 flex items-center justify-center"
                     style={{ zIndex: 1, transform: "translateY(-22px)" }}
                   >
-                    <video
-                      src="/video.mp4"
+                    <CDNVideo
+                      src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/video.mp4"
                       autoPlay
                       loop
                       muted
@@ -149,8 +151,8 @@ export default function GemmaSection() {
                       zIndex: 7,
                     }}
                   >
-                    <img
-                      src="/Gateway.webp"
+                    <CDNImage
+                      src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Gateway.webp"
                       alt="Gateway of India"
                       className="w-[170px] sm:w-[180px] md:w-[200px] lg:w-[220px] object-contain"
                     />
@@ -169,8 +171,8 @@ export default function GemmaSection() {
                       zIndex: 7,
                     }}
                   >
-                    <img
-                      src="/Shaniwaar_Wada-removebg-preview.webp"
+                    <CDNImage
+                      src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Shaniwaar_Wada-removebg-preview.webp"
                       alt="Shaniwar Wada"
                       className="w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] object-contain"
                     />

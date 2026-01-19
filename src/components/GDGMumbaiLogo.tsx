@@ -3,6 +3,6 @@ import Image from "next/image";
 
 export default function GDGMumbaiLogo({ className = "" }) {
   return (
-    <Image src="/GDG%20Cloud%20Mumbai%20Logo.webp" alt="GDG Cloud Mumbai Logo" width={36} height={36} className={className} />
+    <Image src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/GDG%20Cloud%20Mumbai%20Logo.webp" alt="GDG Cloud Mumbai Logo" width={36} height={36} className={className} />
   );
 }

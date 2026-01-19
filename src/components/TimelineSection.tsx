@@ -222,7 +222,7 @@ export default function TimelineSection() {
                         style={{ willChange: 'transform' }}
                     >
                         <Image 
-                            src="/train1.webp" 
+                            src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/train1.webp" 
                             alt="Metro Train" 
                             width={120} 
                             height={120}

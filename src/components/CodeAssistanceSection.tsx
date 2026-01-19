@@ -130,7 +130,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/fintech.webp"
+                    src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/fintech.webp"
                     alt="FinTech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -164,7 +164,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/cyber.webp"
+                    src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/cyber.webp"
                     alt="Cyber Security"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -198,7 +198,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/edutech.webp"
+                    src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/edutech.webp"
                     alt="Edu Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -232,7 +232,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/agritech.webp"
+                    src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/agritech.webp"
                     alt="Agri Tech"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}
@@ -266,7 +266,7 @@ export default function CodeAssistanceSection() {
 
                 <div className="overflow-hidden rounded-xl relative z-20">
                   <img
-                    src="/open_innovation.webp"
+                    src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/open_innovation.webp"
                     alt="Open Innovation"
                     className="w-full h-full object-cover object-right transform scale-105 md:scale-110 lg:scale-125"
                     style={{ willChange: "transform" }}

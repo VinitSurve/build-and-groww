@@ -2,8 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";import CDNImage from './CDNImage';
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
 }
@@ -182,10 +181,10 @@ export default function EdgeSection() {
                                                 <div className="absolute -inset-6 rounded-full opacity-30 pointer-events-none" style={neonStyle(0)} />
 
                                                 <div className="w-full max-w-[220px] sm:max-w-[260px] md:max-w-[300px] mx-auto">
-                                                    <img
+                                                    <CDNImage
                                                         ref={gatewayRef}
                                                         onClick={handleGatewayClick}
-                                                        src="/Gateway%20Mumbai.webp"
+                                                        src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Gateway%20Mumbai.webp"
                                                         alt="Gateway of India"
                                                         className="w-full h-auto object-contain rounded-lg shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
                                                     />
@@ -230,7 +229,7 @@ export default function EdgeSection() {
                                 <div className="animate-reveal bg-gradient-to-br from-[#1a1c20] to-[#16171a] rounded-[2.5rem] p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start border border-white/5 shadow-2xl hover:border-cyan-400/20 transition-all duration-300 group">
                                     <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 rounded-3xl overflow-hidden border border-white/10 relative group-hover:border-cyan-400/30 transition-all">
                                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent z-0" />
-                                        <img src="/IMG_2046.webp" alt="Community Impact" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+                                        <CDNImage src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_2046.webp" alt="Community Impact" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
                                     </div>
 
                                     <div className="flex-1 space-y-3">
@@ -248,7 +247,7 @@ export default function EdgeSection() {
                                 <div className="animate-reveal bg-gradient-to-br from-[#1a1c20] to-[#16171a] rounded-[2.5rem] p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start border border-white/5 shadow-2xl hover:border-cyan-400/20 transition-all duration-300 group">
                                     <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex-shrink-0 rounded-3xl overflow-hidden border border-white/10 relative group-hover:border-cyan-400/30 transition-all">
                                         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent z-0" />
-                                        <img src="/IMG_1674.webp" alt="Events & Reach" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+                                        <CDNImage src="https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1674.webp" alt="Events & Reach" className="relative z-10 object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
                                     </div>
 
                                     <div className="flex-1 space-y-3">

@@ -2,8 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";import CDNImage from './CDNImage';
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
 }
@@ -61,18 +60,18 @@ const apps = [
 ];
 
 const pastMedia = [
-    { title: "Kickoff Event", description: "Opening ceremony with enthusiastic participants and organizers.", image: "/IMG_1188.webp" },
-    { title: "Workshop Session", description: "Hands-on learning and collaboration during a technical workshop.", image: "/IMG_1424.webp" },
-    { title: "Team Formation", description: "Developers forming teams and brainstorming project ideas.", image: "/IMG_1596.webp" },
-    { title: "Networking", description: "Community members connecting and sharing experiences.", image: "/IMG_1674.webp" },
-    { title: "Panel Discussion", description: "Industry experts sharing insights on stage.", image: "/IMG_1816.webp" },
-    { title: "Cloud Community Days", description: "Organizers of GDG Cloud Mumbai coming together for a successful event.", image: "/IMG_1902.webp" },
-    { title: "Award Ceremony", description: "Celebrating winners and recognizing outstanding contributions.", image: "/IMG_2046.webp" },
-    { title: "Community Meetup", description: "Casual gathering for networking and fun activities.", image: "/IMG_2201.webp" },
-    { title: "Workshop Group Photo", description: "Group photo capturing the spirit of learning and collaboration.", image: "/IMG_2226.webp" },
-    { title: "Celebration", description: "Joyful moments and celebrations with the community.", image: "/IMG_2241.webp" },
-    { title: "Event Highlights", description: "Snapshots from various events and activities throughout the year.", image: "/IMG_4297.webp" },
-    { title: "Grand Finale", description: "The grand finale event marking the culmination of our journey.", image: "/IMG-20250503-WA0016.webp" },
+    { title: "Kickoff Event", description: "Opening ceremony with enthusiastic participants and organizers.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1188.webp" },
+    { title: "Workshop Session", description: "Hands-on learning and collaboration during a technical workshop.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1424.webp" },
+    { title: "Team Formation", description: "Developers forming teams and brainstorming project ideas.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1596.webp" },
+    { title: "Networking", description: "Community members connecting and sharing experiences.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1674.webp" },
+    { title: "Panel Discussion", description: "Industry experts sharing insights on stage.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1816.webp" },
+    { title: "Cloud Community Days", description: "Organizers of GDG Cloud Mumbai coming together for a successful event.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_1902.webp" },
+    { title: "Award Ceremony", description: "Celebrating winners and recognizing outstanding contributions.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_2046.webp" },
+    { title: "Community Meetup", description: "Casual gathering for networking and fun activities.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_2201.webp" },
+    { title: "Workshop Group Photo", description: "Group photo capturing the spirit of learning and collaboration.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_2226.webp" },
+    { title: "Celebration", description: "Joyful moments and celebrations with the community.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_2241.webp" },
+    { title: "Event Highlights", description: "Snapshots from various events and activities throughout the year.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG_4297.webp" },
+    { title: "Grand Finale", description: "The grand finale event marking the culmination of our journey.", image: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/IMG-20250503-WA0016.webp" },
 ];
 
 export default function AppShowcaseSlider() {
@@ -150,7 +149,7 @@ export default function AppShowcaseSlider() {
                                                 aria-labelledby={titleId}
                                             >
                                                 <div className="h-56 md:h-64 relative">
-                                                    <img src={m.image} alt={m.title} className="w-full h-full object-cover block" />
+                                                    <CDNImage src={m.image} alt={m.title} className="w-full h-full object-cover block" />
                                                 </div>
                                                 <figcaption className="p-4 bg-[#070708]">
                                                     <h3 id={titleId} className="text-sm md:text-base text-white font-medium">{m.title}</h3>
