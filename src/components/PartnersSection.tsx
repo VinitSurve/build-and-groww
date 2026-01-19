@@ -26,6 +26,7 @@ const communityPartners = [
 const venuePartners = [
   { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/MPSTME_18Ulfmu.webp", alt: "MPSTME", href: "#" },
   { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/Jio%20Institue%20Transparent%20Logo.webp", alt: "Jio Institute", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/data%20axle.webp", alt: "Data Axle", href: "#" }
 ];
 
 const academicPartners = [
@@ -45,8 +46,7 @@ const snackingEnergyPartners = [
 ];
 
 const platformPartners = [
-  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/hack%20culture.webp", alt: "Hack Culture", href: "#" },
-  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/data%20axle.webp", alt: "Data Axle", href: "#" },
+  { src: "https://cdn.jsdelivr.net/gh/randomaiphoto/build-and-grow-media@main/hack%20culture.webp", alt: "Hack Culture", href: "#" }
 ];
 
 const neonColors = ['#7C3AED', '#06B6D4', '#F97316', '#DB2777', '#3B82F6'];
