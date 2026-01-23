@@ -15,6 +15,8 @@ import FAQSection from "@/components/FAQSection";
 import dynamic from "next/dynamic";
 import SponsorsSection from "@/components/SponsorsSection";
 import PartnersSection from "@/components/PartnersSection";
+import MentorsSection from "@/components/MentorsSection";
+import JurySection from "@/components/JurySection";
 import { Analytics } from "@vercel/analytics/next"
 
 const TimelineSection = dynamic(() => import("@/components/TimelineSection"), {
@@ -34,6 +36,8 @@ export default function Home() {
       <TimelineSection />
       <CodeAssistanceSection />
       <PartnersSection />
+      <MentorsSection />
+      <JurySection />
       <SponsorsSection />
       <AppShowcaseSlider />
       <OrganizersSection />
